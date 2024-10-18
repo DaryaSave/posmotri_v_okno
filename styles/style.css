@@ -51,7 +51,6 @@ ol {
   display: flex;
   gap: 30px;
   align-items: flex-end;
-  block-size: inherit;
   justify-content: center;
 }
 
