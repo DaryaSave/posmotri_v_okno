@@ -52,6 +52,7 @@ ol {
   gap: 30px;
   align-items: flex-end;
   justify-content: center;
+  min-width: 1140px;
 }
 
 .result__video-container {
