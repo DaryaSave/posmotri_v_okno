@@ -52,7 +52,8 @@ ol {
   gap: 30px;
   align-items: flex-end;
   justify-content: center;
-  min-width: 1140px;
+  width: 1140px;
+  margin: 0px auto;
 }
 
 .result__video-container {
