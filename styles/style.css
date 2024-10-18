@@ -51,14 +51,11 @@ ol {
   display: flex;
   gap: 30px;
   align-items: flex-end;
-  block-size: 534px;
-  margin: 133px 30px;
+  block-size: inherit;
+  /*margin: 133px 30px;*/
+  justify-content: center;
 }
 
-.result {
-  width: 711px;
-  min-height: 456px;
-}
 .result__video-container {
   position: relative;
   width: 711px;
@@ -75,7 +72,7 @@ ol {
 .search-form{
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
   gap: 40px;
 }
 
@@ -188,7 +185,7 @@ ol {
   position: relative;
   overflow: scroll;
   height: 298px;
-  width: 402px;
+  width: 100%;
 }
 
 .content__list-item:not(:last-child)
@@ -234,7 +231,7 @@ ol {
   height: 103px;
   width: 194px;
   object-fit: contain;
-  object-position: center;
+  object-position: right;
 }
 
 .more-button {
@@ -272,7 +269,9 @@ ol {
 }
 
 .content__card-link:focus-visible {
+  margin: 2px;
   outline: 1px solid white;
+  outline-offset: 1px;
 }
 
 .content__card-link:active {
