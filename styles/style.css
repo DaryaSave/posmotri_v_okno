@@ -54,10 +54,15 @@ ol {
 .content {
   display: flex;
   gap: 30px;
-  align-items: flex-end;
-  justify-content: center;
+  /*align-items: flex-end;
+  justify-content: center;*/
   width: 1140px;
-  margin: 0px auto;
+  /*margin: 0px auto;*/
+}
+
+.result{
+  align-self: flex-end;
+  align-content: center;
 }
 
 .result__video-container {
