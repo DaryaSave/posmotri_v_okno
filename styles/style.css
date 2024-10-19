@@ -19,7 +19,6 @@ html {
   display: flex;
   justify-items: center;
   justify-content: center;
-  height: 100%;
 }
 
 h1,
@@ -54,7 +53,8 @@ ol {
 .content {
   display: flex;
   gap: 30px;
-  width: 1140px;
+  max-width: 1140px;
+  width: 100%;
 }
 
 .result{
@@ -65,9 +65,9 @@ ol {
 
 .result__video-container {
   position: relative;
-  width: 711px;
+  inline-size: 711px;
   height: 386px;
-  margin-bottom: 16px;
+  margin-block-end: 16px;
 }
 
 .result__video {
@@ -90,7 +90,7 @@ ol {
 .search-form__fieldset-title {
    font-size: 18px; 
    font-weight: 400;
-   line-height: 21.6px;
+   line-height: 1.2;
    margin-bottom: 5px;
  }
 
@@ -98,6 +98,9 @@ ol {
   display: flex;
   gap: 5px;
   cursor: pointer;
+  align-items: center;
+  width: fit-content;
+  padding-left: 1px;
 }
 
 .search-form__checkbox[type='checkbox']:checked + .search-form__pseudo-checkbox {
@@ -106,7 +109,7 @@ ol {
   background-color: white;
   width: 15px;
   height: 15px;
-  margin: 2px 2px 2px 2px;
+  margin: 1px;
 }
 
 .search-form__textfield {
@@ -115,7 +118,7 @@ ol {
   border-bottom: 1px solid white;
   background-color: transparent;
   color: white;
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: normal;
   font-size: 18px;
   appearance: none;
@@ -131,6 +134,7 @@ ol {
 .search-form__label:has(:focus-visible) {
   outline: 1px solid white;
   outline-offset: 2px;
+  border-radius: 0;
 }
 
 .search-form__pseudo-checkbox {
@@ -194,8 +198,7 @@ ol {
   width: 100%;
 }
 
-.content__list-item:not(:last-child)
-{
+.content__list-item:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -212,7 +215,6 @@ ol {
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
-  min-height: 107px;
   padding: 2px 2px 2px 4px;
 }
 
@@ -224,6 +226,10 @@ ol {
   text-transform: uppercase;
   margin-bottom: 6px;
   line-height: 30px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 200px;
 }
 
 .content__video-card-description {
@@ -275,7 +281,6 @@ ol {
 }
 
 .content__card-link:focus-visible {
-  margin: 2px;
   outline: 1px solid white;
   outline-offset: 1px;
 }
